@@ -28,54 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            label1 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
+            button1 = new Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 45F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(226, 153);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 81);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "00:00:00";
-            this.label1.Click += new System.EventHandler(this.timer1_Tick);
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 45F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.MenuHighlight;
+            label1.Location = new Point(226, 153);
+            label1.Name = "label1";
+            label1.Size = new Size(277, 81);
+            label1.TabIndex = 0;
+            label1.Text = "00:00:00";
+            label1.Click += timer1_Tick;
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Location = new System.Drawing.Point(485, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 43);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "STOPER";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.HotTrack;
+            button1.Location = new Point(485, 292);
+            button1.Name = "button1";
+            button1.Size = new Size(122, 43);
+            button1.TabIndex = 1;
+            button1.Text = "STOPER";
+            button1.TextImageRelation = TextImageRelation.TextAboveImage;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "ZEGAR WIELOFUNKCYJNY";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

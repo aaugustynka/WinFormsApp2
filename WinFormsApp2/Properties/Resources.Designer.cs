@@ -59,5 +59,15 @@ namespace WinFormsApp2.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_1626_1_ {
+            get {
+                object obj = ResourceManager.GetObject("IMG_1626_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

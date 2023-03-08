@@ -17,7 +17,10 @@ namespace WinFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
             Form form = new Form();
-            form.ShowDialog();  
+            //form.ShowDialog();
+            var newform = new Form2();
+            newform.Show();
+            
         }
     }
 }
